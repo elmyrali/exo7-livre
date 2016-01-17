@@ -1,0 +1,35 @@
+\documentclass[11pt,twoside,openright]{report}
+% les options possibles sont : [minimal], [screen] et [print]
+% par defaut c'est screen
+\usepackage[screen]{exo7book}
+
+
+\begin{document}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % Titre + préface + sommaire
+% \renewcommand{\contentsname}{Sommaire}
+% %\montitre{Algèbre\\ Cours de mathématiques\\ Première année}
+\import{autres/}{preface-algebre.tex}
+\debutchapitres
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Les chapitres
+
+%-------------- Algèbre 1 -----------------
+
+\import{arithmetique/}{ch_arithmetique.tex}
+
+\import{crypto/}{ch_crypto.tex}
+%
+%\import{algo/}{ch_algo.tex}
+%
+%\import{zeros/}{ch_zeros.tex}
+%
+%\import{formel/}{ch_formel.tex}
+
+
+%\centerline{Version 1.00 -- Janvier 2016}
+
+\end{document}
+

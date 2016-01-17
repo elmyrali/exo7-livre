@@ -1,0 +1,30 @@
+\begin{tikzpicture}[scale=0.4]
+
+
+\begin{scope}[rotate=25]
+
+       \draw (3,0) circle (6);
+       \draw (-3,0) circle (6); 
+       \fill[blue] (3,0) circle (4pt);
+       \fill[blue] (-3,0) circle (4pt);
+   % a la main
+
+       \coordinate (B) at (0,5.2);
+       \coordinate (BB) at (0,-5.2);
+       \fill (B) circle (1pt);
+       \fill (BB) circle (1pt);
+
+      \draw[dashed, red] (0,-8)--(0,8);
+      
+      \fill[red] (B) circle (4pt);
+      \fill[red] (BB) circle (4pt);
+    %   \fill[red] (2,1.5) circle (4pt);
+
+       \node at (-3,0) [below left] {$A$}; 
+       \node at  (B) [above] {$C$}; 
+       \node at (BB) [below] {$C'$}; 
+       \node at (3,0) [above right] {$B$}; 
+     %  \node at (2,1.5) [below] {$I$}; 
+
+\end{scope}
+\end{tikzpicture}
